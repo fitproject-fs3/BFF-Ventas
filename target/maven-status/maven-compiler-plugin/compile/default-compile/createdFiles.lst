@@ -1,9 +1,0 @@
-com\fitproject\bffventas\dto\GymModelDTO.class
-com\fitproject\bffventas\controller\VentasController.class
-com\fitproject\bffventas\dto\GymModelDTO$GymModelDTOBuilder.class
-com\fitproject\bffventas\dto\SaleRequestDTO.class
-com\fitproject\bffventas\BffVentasApplication.class
-com\fitproject\bffventas\config\SecurityConfig.class
-com\fitproject\bffventas\dto\SaleDTO$SaleDTOBuilder.class
-com\fitproject\bffventas\dto\SaleDTO.class
-com\fitproject\bffventas\client\VentasClient.class
