@@ -1,0 +1,16 @@
+services:
+  bff-ventas:
+    build: .
+    container_name: fit-bff-ventas
+    restart: unless-stopped
+    environment:
+      MS_VENTAS_URL: ${MS_VENTAS_URL:-http://fit-ventas-service:8091}
+      SERVER_PORT: 8083
+    ports:
+      - "8083:8083"
+    networks:
+      - fit-network
+
+networks:
+  fit-network:
+    external: true
