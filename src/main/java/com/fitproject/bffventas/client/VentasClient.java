@@ -1,12 +1,17 @@
 package com.fitproject.bffventas.client;
 
+import com.fitproject.bffventas.client.fallback.VentasClientFallbackFactory;
 import com.fitproject.bffventas.dto.*;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@FeignClient(name = "ms-ventas", url = "${ms.ventas.url}")
+@FeignClient(
+        name = "ms-ventas",
+        url = "${ms.ventas.url}",
+        fallbackFactory = VentasClientFallbackFactory.class
+)
 public interface VentasClient {
 
     @GetMapping("/api/v1/models")

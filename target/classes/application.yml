@@ -1,0 +1,10 @@
+server:
+  port: ${SERVER_PORT:8083}
+
+spring:
+  application:
+    name: bff-ventas
+
+ms:
+  ventas:
+    url: ${MS_VENTAS_URL:http://localhost:8091}
